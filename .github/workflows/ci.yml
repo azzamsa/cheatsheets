@@ -1,0 +1,30 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+  schedule:
+    - cron: "0 0 * * 0"
+
+jobs:
+  ci:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: "Build website"
+        uses: shalzz/zola-deploy-action@master
+        env:
+          PAGES_BRANCH: gh-pages
+          BUILD_DIR: .
+          BUILD_ONLY: true
+          TOKEN: fake-secret

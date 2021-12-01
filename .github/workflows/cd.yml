@@ -1,0 +1,23 @@
+name: cd
+
+on:
+  push:
+    tags:
+    - "v[0-9]+.[0-9]+.[0-9]+"
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: "Build and deploy website"
+        uses: shalzz/zola-deploy-action@master
+        env:
+          PAGES_BRANCH: gh-pages
+          BUILD_DIR: .
+          TOKEN: ${{ secrets.GH_TOKEN }}
