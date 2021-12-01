@@ -20,7 +20,7 @@ body = """
     {% for commit in commits
     | filter(attribute="scope")
     | sort(attribute="scope") %}
-        - *({{commit.scope}})* {{ commit.message | upper_first }} ({{ commit.id | truncate(length=7, end=\"\") }})
+        - **{{commit.scope}}:** {{ commit.message | upper_first }} ({{ commit.id | truncate(length=7, end=\"\") }})
         {%- if commit.breaking %}
         {% raw %}  {% endraw %}- **BREAKING**: {{commit.breaking_description}}
         {%- endif -%}
