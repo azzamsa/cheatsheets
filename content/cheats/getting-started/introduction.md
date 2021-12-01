@@ -15,7 +15,7 @@ Use the navigation bar 🧭 or the search bar 🔎 to find your favourite cheat.
 
 ## Contributing
 
-I won't be accepting a pull request for cheat addition. Since this act like a personal knowlede manager for me.
+I won't be accepting a pull request for cheat addition. Since this act like a personal knowledge manager for me.
 But I accept improvement and suggestions.
 
 ## License

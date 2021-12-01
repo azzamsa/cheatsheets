@@ -1,7 +1,7 @@
-# The URL the site will be built for .
+# The URL the site will be built for
 base_url = "https://azzamsa.github.io/cheatsheets"
 title = "Cheatsheets"
-description = "My most used shippets that nice to share"
+description = "My most used snippets that nice to share"
 
 theme = "adidoks"
 default_language = "en"
