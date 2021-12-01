@@ -16,4 +16,16 @@ toc = true
 chsh -s `which fish`
 ```
 
+### For-loop in Range
+
+``` fish
+for i in (seq 1 50); sleep 3 && curl -s -I "https://httpbin.org/anything"; end
+```
+
+``` fish
+for i in (seq 1 50)
+    sleep 3 && curl -s -I "https://httpbin.org/anything"
+end
+```
+
 
