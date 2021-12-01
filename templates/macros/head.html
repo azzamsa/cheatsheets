@@ -11,9 +11,17 @@
 
 {% macro favicons() %}
   <meta name="theme-color" content="{{ config.extra.theme_color | default(value="#fff") }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path="apple-touch-icon.png") | safe }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="favicon-32x32.png") | safe }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="favicon-16x16.png") | safe }}">
+  <link rel="shortcut icon" href="{{ get_url(path="icons/favicon.ico") | safe }}" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="{{ get_url(path="icons/apple-touch-icon.png") | safe }}" />
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ get_url(path="icons/apple-touch-icon-57x57.png") | safe }}" />
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ get_url(path="icons/apple-touch-icon-72x72.png") | safe }}" />
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ get_url(path="icons/apple-touch-icon-76x76.png") | safe }}" />
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ get_url(path="icons/apple-touch-icon-114x114.png") | safe }}" />
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ get_url(path="icons/apple-touch-icon-120x120.png") | safe }}" />
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ get_url(path="icons/apple-touch-icon-144x144.png") | safe }}" />
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ get_url(path="icons/apple-touch-icon-152x152.png") | safe }}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path="icons/apple-touch-icon-180x180.png") | safe }}" />
+
   {% if not config.extra.is_netlify %}
     <link rel="manifest" href="{{ get_url(path="site.webmanifest") | safe }}">
   {% endif %}
