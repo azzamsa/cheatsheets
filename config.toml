@@ -22,6 +22,7 @@ include_content = true
 
 [markdown]
 highlight_code = true
+highlight_theme = "inspired-github"
 
 [extra]
 # Put all your custom variables here
