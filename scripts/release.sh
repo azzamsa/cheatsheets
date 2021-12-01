@@ -13,8 +13,6 @@ fi
 
 # takes the tag as an argument (e.g. v0.1.0)
 if [ -n "$1" ]; then
-	# update the version
-    sed "0,/^version = .*$/s//version = \"${1#v}\"/" -i Cargo.toml
 	# update the changelog
 	git-cliff --tag "$1" > CHANGELOG.md
 	git add -A && git commit -m "$1"
