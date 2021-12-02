@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.6] - 2021-12-02
+
+### Bug Fixes
+- Twitter and og card image not displayed (820a2ad)
+
+
+### Features
+- Use emoji brain as logo (2d6943c)
+- More elisp (c3b9297)
+- More commands (b3463bf)
+- More commands (6878fc8)
+
+
 ## [0.1.5] - 2021-12-01
 
 ### Bug Fixes
