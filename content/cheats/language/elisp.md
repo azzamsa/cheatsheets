@@ -4,9 +4,11 @@ description = "Emacs Lisp"
 date = 2021-12-01
 updated = 2021-12-01
 draft = false
-weight = 10
+weight = 3
 sort_by = "weight"
 template = "cheats/page.html"
+
+[extra]
 toc = true
 +++
 

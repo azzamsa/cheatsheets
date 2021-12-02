@@ -1,12 +1,15 @@
 +++
-title = "Commands"
-description = "Commands"
+title = "Applications"
+description = "Applications"
 date = 2021-12-01
 updated = 2021-12-01
 draft = false
 weight = 10
 sort_by = "weight"
 template = "cheats/page.html"
+toc = true
+
+[extra]
 toc = true
 +++
 
@@ -53,16 +56,22 @@ dig @10.10.10.10 example.com SOA +tcp +short
 -z, --compress
 
 
-rsync -avrzP --delete --exclude '*.pyc' -e "ssh -i ~/keys/key.pem" . centos@10.10.10.10:/opt/knot/app
+# sycn deletion
+rsync -avrzP --delete --exclude '*.pyc' -e "ssh -i ~/keys/key.pem" . user@10.10.10.10:/opt/knot/app
+# ignore deletion
+rsync -avrzP --exclude '*.pyc' -e "ssh -i ~/keys/key.pem" . user@10.10.10.10:/opt/knot/app
 ```
 
 ### scp
 
 ``` bash
-scp -i /path/to/key.pem app.tar <username>@<public-ip>:~/your/destination/dir/
+# remote to local
+scp -i ~/keys/key.pem user@10.10.10.10:/tmp/file.tar.gz /tmp
+# local to remote
+scp -i ~/keys/key.pem -r ./* user@10.10.10.10:/opt/app
 ```
 
-## Shutdown external hardisk
+### Shutdown external hardisk
 
 ``` bash
 lsblk
@@ -72,6 +81,23 @@ udisksctl power-off -b /dev/sdb1
 ```
 
 
+### mpv
 
+``` bash
+mpv marimbach-low-bat.ogg --loop --force-window
+```
 
+### telnet
+
+``` bash
+telnet 10.10.10.10 22
+```
+
+### docker
+
+``` bash
+# get into the running container
+
+docker exec -it <container-id> ash
+```
 

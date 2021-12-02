@@ -1,6 +1,7 @@
+
 +++
-title = "Command Line"
-description = "Command line"
+title = "Applications"
+description = "Applications"
 date = 2025-12-01
 updated = 2021-12-01
 template = "cheats/section.html"
