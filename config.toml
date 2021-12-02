@@ -46,7 +46,7 @@ repo_branch = "master"
 ## Open Graph + Twitter Cards
 [extra.open]
 enable = true
-image = "profile-2020.webp"
+image = "logo.png"
 twitter_site = "azzamsyawqi"
 twitter_creator = "azzamsyawqi"
 og_locale = "en_US"
@@ -54,7 +54,7 @@ og_locale = "en_US"
 ## JSON-LD
 [extra.schema]
 type = "Person"
-logo = "profile-2020.webp"
+logo = "logo.png"
 twitter = "https://twitter.com/azzamsyawqi"
 linked_in = "https://www.linkedin.com/in/azzam-syawqi-aziz-157b6018/"
 github = "https://github.com/azzamsa"

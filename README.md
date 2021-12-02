@@ -18,3 +18,4 @@ My most used snippets 🧠 that nice to share.
 ## Credits
 
 - [AdiDoks](https://github.com/aaranxu/adidoks) theme by Aaran Xu
+- [Noto Emoji](https://github.com/googlefonts/noto-emoji) by Google
