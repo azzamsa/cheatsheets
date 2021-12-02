@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://azzamsa.github.io/cheatsheets/sitemap.xml

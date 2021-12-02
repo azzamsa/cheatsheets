@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Cheatsheets</title>
+	<subtitle>My most used snippets that nice to share</subtitle>
+	<link href="https://azzamsa.github.io/cheatsheets/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://azzamsa.github.io/cheatsheets"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-12-01T00:00:00+00:00</updated>
+	<id>https://azzamsa.github.io/cheatsheets/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Applications</title>
+		<published>2021-12-01T00:00:00+00:00</published>
+		<updated>2021-12-01T00:00:00+00:00</updated>
+		<link href="https://azzamsa.github.io/cheatsheets/cheats/apps/apps/" type="text/html"/>
+		<id>https://azzamsa.github.io/cheatsheets/cheats/apps/apps/</id>
+		<content type="html">&lt;h3 id=&quot;sftp-in-thunar&quot;&gt;Sftp in Thunar&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;sftp:&#x2F;&#x2F;user@10.10.10.10&#x2F;
+&lt;&#x2F;span&gt;&lt;span&gt;sftp:&#x2F;&#x2F;user@10.10.10.10&#x2F;otp
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;compressing-images&quot;&gt;Compressing images&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;font-style:italic;color:#969896;&quot;&gt;# single
+&lt;&#x2F;span&gt;&lt;span&gt;convert test-1024x.jpg -quality 50% test-1024x-50p.jpg
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#969896;&quot;&gt;# many
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span&gt; i &lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0086b3;&quot;&gt;\*&lt;&#x2F;span&gt;&lt;span&gt;-1024x.jpg&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;; do &lt;&#x2F;span&gt;&lt;span&gt;convert $i -quality 50% $i-50p.jpg&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;; done;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;askubuntu.com&#x2F;questions&#x2F;781497&#x2F;how-can-i-compress-images&quot;&gt;How can I compress images? - Ask Ubuntu&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;espeak&quot;&gt;espeak&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;espeak -v mb-id1 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;Selamat anda telah berhasil&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;arifnd.wordpress.com&#x2F;2013&#x2F;08&#x2F;19&#x2F;text-to-speech-berbahasa-indonesia-dengan-espeak&#x2F;&quot;&gt;Text to Speech Berbahasa Indonesia dengan eSpeak | Catatan&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;dig&quot;&gt;dig&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;dig @10.10.10.10 example.com SOA +tcp +short
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;rsync&quot;&gt;rsync&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;-a, --archive
+&lt;&#x2F;span&gt;&lt;span&gt;-v, --verbose
+&lt;&#x2F;span&gt;&lt;span&gt;-r, --recursive
+&lt;&#x2F;span&gt;&lt;span&gt;-P, --progres
+&lt;&#x2F;span&gt;&lt;span&gt;-z, --compress
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#969896;&quot;&gt;# sycn deletion
+&lt;&#x2F;span&gt;&lt;span&gt;rsync -avrzP --delete --exclude &lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;#39;*.pyc&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; -e &lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;ssh -i ~&#x2F;keys&#x2F;key.pem&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt; . user@10.10.10.10:&#x2F;opt&#x2F;knot&#x2F;app
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#969896;&quot;&gt;# ignore deletion
+&lt;&#x2F;span&gt;&lt;span&gt;rsync -avrzP --exclude &lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;#39;*.pyc&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; -e &lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;ssh -i ~&#x2F;keys&#x2F;key.pem&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt; . user@10.10.10.10:&#x2F;opt&#x2F;knot&#x2F;app
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;scp&quot;&gt;scp&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;font-style:italic;color:#969896;&quot;&gt;# remote to local
+&lt;&#x2F;span&gt;&lt;span&gt;scp -i ~&#x2F;keys&#x2F;key.pem user@10.10.10.10:&#x2F;tmp&#x2F;file.tar.gz &#x2F;tmp
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#969896;&quot;&gt;# local to remote
+&lt;&#x2F;span&gt;&lt;span&gt;scp -i ~&#x2F;keys&#x2F;key.pem -r .&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt; user@10.10.10.10:&#x2F;opt&#x2F;app
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;shutdown-external-hardisk&quot;&gt;Shutdown external hardisk&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;lsblk
+&lt;&#x2F;span&gt;&lt;span&gt;fdisk -l
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;udisksctl power-off -b &#x2F;dev&#x2F;sdb1
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;mpv&quot;&gt;mpv&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;mpv marimbach-low-bat.ogg --loop --force-window
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;telnet&quot;&gt;telnet&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;telnet 10.10.10.10 22
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;docker&quot;&gt;docker&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;font-style:italic;color:#969896;&quot;&gt;# get into the running container
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;docker exec -it &lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span&gt;container-id&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span&gt; ash
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Introduction</title>
+		<published>2021-12-01T00:00:00+00:00</published>
+		<updated>2021-12-01T00:00:00+00:00</updated>
+		<link href="https://azzamsa.github.io/cheatsheets/cheats/getting-started/introduction/" type="text/html"/>
+		<id>https://azzamsa.github.io/cheatsheets/cheats/getting-started/introduction/</id>
+		<content type="html">&lt;h2 id=&quot;quick-start&quot;&gt;Quick Start&lt;&#x2F;h2&gt;
+&lt;p&gt;Use the navigation bar 🧭 or the search bar 🔎 to find your favourite cheat.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;contributing&quot;&gt;Contributing&lt;&#x2F;h2&gt;
+&lt;p&gt;I won&#x27;t be accepting a pull request for cheat addition. Since this act like a personal knowledge manager for me.
+But I accept improvement and suggestions.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;license&quot;&gt;License&lt;&#x2F;h2&gt;
+&lt;p&gt;MIT.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Emacs Lisp</title>
+		<published>2021-12-01T00:00:00+00:00</published>
+		<updated>2021-12-01T00:00:00+00:00</updated>
+		<link href="https://azzamsa.github.io/cheatsheets/cheats/language/elisp/" type="text/html"/>
+		<id>https://azzamsa.github.io/cheatsheets/cheats/language/elisp/</id>
+		<content type="html">&lt;h3 id=&quot;asynchronous-process&quot;&gt;Asynchronous Process&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;lisp&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-lisp &quot;&gt;&lt;code class=&quot;language-lisp&quot; data-lang=&quot;lisp&quot;&gt;&lt;span&gt;(start&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;-&lt;&#x2F;span&gt;&lt;span&gt;process &lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;my-process&amp;quot; &amp;quot;foo&amp;quot; &amp;quot;ls&amp;quot; &amp;quot;-l&amp;quot; &amp;quot;&#x2F;bin&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;(start&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;-&lt;&#x2F;span&gt;&lt;span&gt;process &lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0086b3;&quot;&gt;nil &lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;ls&amp;quot; &amp;quot;-l&amp;quot; &amp;quot;&#x2F;bin&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;emacs&#x2F;manual&#x2F;html_node&#x2F;elisp&#x2F;Asynchronous-Processes.html&quot;&gt;Asynchronous Processes - GNU Emacs Lisp Reference Manual&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;string&quot;&gt;String&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;string-to-number&quot;&gt;String to number&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;lisp&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-lisp &quot;&gt;&lt;code class=&quot;language-lisp&quot; data-lang=&quot;lisp&quot;&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#62a35c;&quot;&gt;string&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;-to-&lt;&#x2F;span&gt;&lt;span&gt;number &lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;256&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;(number&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;-to-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#62a35c;&quot;&gt;string &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0086b3;&quot;&gt;256&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;emacs&#x2F;manual&#x2F;html_node&#x2F;elisp&#x2F;String-Conversion.html&quot;&gt;String Conversion - GNU Emacs Lisp Reference Manual&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;list&quot;&gt;List&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;get-list-element&quot;&gt;Get list element&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;lisp&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-lisp &quot;&gt;&lt;code class=&quot;language-lisp&quot; data-lang=&quot;lisp&quot;&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#62a35c;&quot;&gt;nth &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0086b3;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt; &amp;#39;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#0086b3;&quot;&gt;1 2 3 4&lt;&#x2F;span&gt;&lt;span&gt;))
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;emacs&#x2F;manual&#x2F;html_node&#x2F;elisp&#x2F;List-Elements.html&quot;&gt;List Elements - GNU Emacs Lisp Reference Manual&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;append-a-list&quot;&gt;Append a list&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;lisp&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-lisp &quot;&gt;&lt;code class=&quot;language-lisp&quot; data-lang=&quot;lisp&quot;&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#62a35c;&quot;&gt;append&lt;&#x2F;span&gt;&lt;span&gt; &amp;#39;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;a&amp;quot; &amp;quot;b&amp;quot; &amp;quot;c&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;) &amp;#39;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;d&amp;quot; &amp;quot;e&amp;quot; &amp;quot;f&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;))
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;join-a-list&quot;&gt;Join a list&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;lisp&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-lisp &quot;&gt;&lt;code class=&quot;language-lisp&quot; data-lang=&quot;lisp&quot;&gt;&lt;span&gt;(mapconcat &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#62a35c;&quot;&gt;identity&lt;&#x2F;span&gt;&lt;span&gt; &amp;#39;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;foo&amp;quot; &amp;quot;bar&amp;quot; &amp;quot;baz&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;, &amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#62a35c;&quot;&gt;string&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;-&lt;&#x2F;span&gt;&lt;span&gt;join &amp;#39;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;one&amp;quot; &amp;quot;two&amp;quot; &amp;quot;three&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;, &amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;) &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#969896;&quot;&gt;; ==&amp;gt; &amp;quot;one, two, three&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;(s&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;-&lt;&#x2F;span&gt;&lt;span&gt;join &lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;+&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt; &amp;#39;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;abc&amp;quot; &amp;quot;def&amp;quot; &amp;quot;ghi&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;)) &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#969896;&quot;&gt;;; =&amp;gt; &amp;quot;abc+def+ghi&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;(combine&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;-and-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#62a35c;&quot;&gt;quote&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;-&lt;&#x2F;span&gt;&lt;span&gt;strings &amp;#39;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;foo&amp;quot; &amp;quot;bar&amp;quot; &amp;quot;baz&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;, &amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;) &amp;quot;foo, bar, baz&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;12999530&#x2F;is-there-a-function-that-joins-a-string-into-a-delimited-string&quot;&gt;elisp - Is there a function that joins a string into a de…&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;time&quot;&gt;Time&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;time-of-day&quot;&gt;Time of day&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;code&gt;(current-time-string)&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;emacs&#x2F;manual&#x2F;html_node&#x2F;elisp&#x2F;Time-of-Day.html&quot;&gt;Time of Day - GNU Emacs Lisp Reference Manual&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;calculate-time&quot;&gt;Calculate time&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;lisp&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-lisp &quot;&gt;&lt;code class=&quot;language-lisp&quot; data-lang=&quot;lisp&quot;&gt;&lt;span&gt;`time-subtract`
+&lt;&#x2F;span&gt;&lt;span&gt;`time-add`
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;emacs&#x2F;manual&#x2F;html_node&#x2F;elisp&#x2F;Time-Calculations.html&quot;&gt;Time Calculations - GNU Emacs Lisp Reference Manual&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Fish Shell</title>
+		<published>2021-12-01T00:00:00+00:00</published>
+		<updated>2021-12-01T00:00:00+00:00</updated>
+		<link href="https://azzamsa.github.io/cheatsheets/cheats/language/fish/" type="text/html"/>
+		<id>https://azzamsa.github.io/cheatsheets/cheats/language/fish/</id>
+		<content type="html">&lt;h3 id=&quot;change-default-shell-to-fish&quot;&gt;Change default shell to fish&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;chsh -s `which fish`
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;for-loop-in-range&quot;&gt;For-loop in Range&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;fish&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-fish &quot;&gt;&lt;code class=&quot;language-fish&quot; data-lang=&quot;fish&quot;&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;i &lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;(seq &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0086b3;&quot;&gt;1 50&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span&gt;sleep &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0086b3;&quot;&gt;3 &lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;&amp;amp;&amp;amp; &lt;&#x2F;span&gt;&lt;span&gt;curl -s -I &lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;httpbin.org&#x2F;anything&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;; end
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;fish&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-fish &quot;&gt;&lt;code class=&quot;language-fish&quot; data-lang=&quot;fish&quot;&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;i &lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;(seq &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0086b3;&quot;&gt;1 50&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;    sleep &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0086b3;&quot;&gt;3 &lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;&amp;amp;&amp;amp; &lt;&#x2F;span&gt;&lt;span&gt;curl -s -I &lt;&#x2F;span&gt;&lt;span style=&quot;color:#183691;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;httpbin.org&#x2F;anything&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;end
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Python</title>
+		<published>2021-12-01T00:00:00+00:00</published>
+		<updated>2021-12-01T00:00:00+00:00</updated>
+		<link href="https://azzamsa.github.io/cheatsheets/cheats/language/python/" type="text/html"/>
+		<id>https://azzamsa.github.io/cheatsheets/cheats/language/python/</id>
+		<content type="html">&lt;h3 id=&quot;test-specific-item-using-pytest&quot;&gt;Test specific item using Pytest&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;-s                    shortcut for --capture&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;no.
+&lt;&#x2F;span&gt;&lt;span&gt;-v, --verbose         increase verbosity.
+&lt;&#x2F;span&gt;&lt;span&gt;--pdb                 start the interactive Python debugger on errors
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;pytest -v -s tests&#x2F;integration&#x2F;
+&lt;&#x2F;span&gt;&lt;span&gt;pytest -v -s tests&#x2F;integration&#x2F;test_base.py
+&lt;&#x2F;span&gt;&lt;span&gt;pytest -vv -s tests&#x2F;integration&#x2F;test_base.py::test_get_user --pdb
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Rust</title>
+		<published>2021-12-01T00:00:00+00:00</published>
+		<updated>2021-12-01T00:00:00+00:00</updated>
+		<link href="https://azzamsa.github.io/cheatsheets/cheats/language/rust/" type="text/html"/>
+		<id>https://azzamsa.github.io/cheatsheets/cheats/language/rust/</id>
+		<content type="html">&lt;h3 id=&quot;test-specific-item-using-cargo&quot;&gt;Test specific item using Cargo&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;cargo test&lt;&#x2F;span&gt;&lt;span style=&quot;font-weight:bold;color:#a71d5d;&quot;&gt; --&lt;&#x2F;span&gt;&lt;span&gt; --nocapture --test to_camelcase
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+</feed>
