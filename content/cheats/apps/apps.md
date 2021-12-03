@@ -101,3 +101,55 @@ telnet 10.10.10.10 22
 docker exec -it <container-id> ash
 ```
 
+### Degugging Emacs package
+
+Let's say I want to debug doom-modeline
+
+``` bash
+mkdir /tmp/dooms
+touch /tmp/dooms/init.el
+# then copy the code below into `init.el`
+
+# starts emacs with non-interactive mode to see any error messages
+# and check if all the packages downloaded successfully
+emacs -q -l test-case/init.el --batch
+
+# starts emacs inactively
+emacs -q -l test-case/init.el
+```
+
+``` lisp
+;; set user-emacs-directory to the directory where this file lives
+;; do not read or write anything in $HOME/.emacs.d
+(setq user-init-file (or load-file-name (buffer-file-name)))
+(setq user-emacs-directory (file-name-directory user-init-file))
+
+;; set custom-file to write into a separate place
+(setq custom-file (concat user-emacs-directory ".custom.el"))
+(when (file-readable-p custom-file) (load custom-file))
+
+;; configure melpa (and other repos if needed)
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(setq package-enable-at-startup nil)
+(package-initialize)
+(when (not package-archive-contents)
+    (package-refresh-contents))
+
+;; bootstrap `use-package'
+(setq package-pinned-packages
+      '((bind-key           . "melpa")
+        (diminish           . "melpa")
+        (use-package        . "melpa")))
+
+(dolist (p (mapcar 'car package-pinned-packages))
+  (unless (package-installed-p p)
+    (package-install p)))
+
+;; install and configure packages
+(use-package doom-modeline
+  :ensure t
+  :init (doom-modeline-mode 1))
+```
+
+- [A standalone init.el for Emacs package debugging](https://gonewest818.github.io/2020/03/a-standalone-init.el-for-emacs-package-debugging/)
